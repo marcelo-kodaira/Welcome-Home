@@ -7,9 +7,11 @@ import {
   PrimaryGeneratedColumn,
   ManyToOne,
   UpdateDateColumn,
+  OneToMany
 } from "typeorm";
 import { Addresses } from "./addresses.entity";
 import { Categories } from "./categories.entity";
+import { ScheduleUsersProperties } from "./scheduleUserProperties.entity";
 
 @Entity("properties")
 class Properties {
@@ -37,6 +39,11 @@ class Properties {
 
   @ManyToOne(() => Categories, {eager: true})
   category: Categories;
+
+  @OneToMany(() => ScheduleUsersProperties, schedule_users_properties => schedule_users_properties.property  )
+  schedules: ScheduleUsersProperties[];
+
+
 }
 
 export { Properties };

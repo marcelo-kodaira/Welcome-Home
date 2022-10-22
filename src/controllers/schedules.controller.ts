@@ -5,7 +5,7 @@ import listScheduleService from "../services/schedule/listSchedules.service";
 
 const createScheduleController = async (req: Request, res: Response)=>{
    const data:IScheduleRequest = req.body
-   const token = req.headers.authorization?.split(" ")[1]
+   const token = req.user.id
    const schedule = await createScheduleService(data,token)
    return res.status(201).json({message: schedule})
 }
@@ -13,7 +13,7 @@ const createScheduleController = async (req: Request, res: Response)=>{
 const listScheduleController = async(req:Request, res:Response) =>{
    const {id} = req.params
    const list = await listScheduleService(id)
-   return res.status(200).json({schedules: [list]})
+   return res.status(200).json(list)
 }
 
 export {createScheduleController,listScheduleController}

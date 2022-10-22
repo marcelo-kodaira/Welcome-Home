@@ -5,7 +5,7 @@ import isOnlyAdmMiddleware from "../middlewares/isOnlyAdm.middleware";
 
 const scheduleRouter = Router()
 
-scheduleRouter.post("",createScheduleController)
+scheduleRouter.post("",authMiddleware,createScheduleController)
 scheduleRouter.get("/properties/:id",authMiddleware,isOnlyAdmMiddleware,listScheduleController)
 
 export default scheduleRouter

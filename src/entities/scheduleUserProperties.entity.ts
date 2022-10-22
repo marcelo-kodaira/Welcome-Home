@@ -16,7 +16,7 @@ class ScheduleUsersProperties{
     @ManyToOne(() => Properties)
     property: Properties
 
-    @ManyToOne(() =>User)
+    @ManyToOne(() =>User, {eager:true})
     user: User
 }
 

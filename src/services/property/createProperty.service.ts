@@ -36,8 +36,8 @@ const createPropertyService = async ({address, categoryId, size, value}:IPropert
     city,
     district,
     state,
-    number : number,
-    zipCode: zipCode
+    number,
+    zipCode
   })
 
   await addressRepository.save(registerAddress)
