@@ -18,7 +18,7 @@
 
 # Requisições e retornos
 
-## POST - /users
+### POST - /users
 Rota para criação de usuário com os seguintes dados:
 - name: string
 - email: string
