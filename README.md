@@ -1,7 +1,7 @@
 # Welcome Home
 
 
-#Endpoints
+# Endpoints
 | Método | Endpoint | Responsabilidade |
 | --- | --- | --- |
 | POST | /users | Criação de usuário |
