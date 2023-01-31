@@ -1,7 +1,7 @@
 # Welcome Home
 
 
-# Endpoints
+## Endpoints
 | Método | Endpoint | Responsabilidade |
 | --- | --- | --- |
 | POST | /users | Criação de usuário |
@@ -16,7 +16,7 @@
 | POST | /schedules | Agenda uma visita a um imóvel |
 | GET | /schedules/properties/<id> | lista todos os agendamentos de um imóvel |
 
-# Requisições e retornos
+## Requisições e retornos
 
 ### POST - /users
 Rota para criação de usuário com os seguintes dados:
@@ -32,39 +32,39 @@ Rota para criação de usuário com os seguintes dados:
 A rota de criação retorna todos os dados, com exceção da hash de senha.
 Não podem ser cadastrados dois usuário com o mesmo e-mail.
 
-## GET - /users
+### GET - /users
 A rota deve retorna todos os dados dos usuários, com exceção da hash de senha.
 a rota pode ser acessada apenas por administradores.
 
-## PATCH - /users/<id>
+### PATCH - /users/<id>
 Não é possível atualizar os campos id, isAdm e isActive.
 Apenas administradores podem atualizar qualquer usuário, usuários não-administradores podem apenas atualizar seu próprio usuário.
 
-## DELETE - /users/<id>
+### DELETE - /users/<id>
 A rota realiza um soft delete do usuário, alterando isActive para false.
 A rota pode ser acessada apenas por administradores.
 Não é possível realizar um soft delete de um usuário inativo.
 
-## POST - /login
+### POST - /login
 Rota de login recebendo email e password
 O login valida se o usuário existe e valida se a senha está correta.
 
-## POST - /categories
+### POST - /categories
 Rota para criação de categorias com os seguintes dados:
 - name: string
 - id: Não deve ser passado mas gerado no momento da validação dos dados, deve um uuidv4.
 Não podem ser cadastradas duas categorias com o mesmo nome.
 A rota pode ser acessada apenas por administradores.
 
-## GET - /categories
+### GET - /categories
 Rota lista todas as categorias.
 A rota não precisa de autenticação para ser acessada.
 
-## GET - /categories/<id>
+### GET - /categories/<id>
 Rota lista todos os agendamentos de um imóvel.
 A rota pode ser acessada apenas por administradores.
 
-# Instalação
+## Instalação
 Para inciar este projeto, é necessário instalar as dependências, que serão utilizadas nos testes. Portanto utilize o comando abaixo para instalar tais dependências:
 
 ````
