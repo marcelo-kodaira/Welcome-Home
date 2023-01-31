@@ -1,5 +1,11 @@
 # Welcome Home
 
+## Tecnologias
+Este sistema foi desenvolvido em Node.js utilizando as seguintes tecnologias:
+
+Biblioteca bcrypt para criptografia de senhas
+Biblioteca jsonwebtoken (JWT) para autenticação de usuários
+Framework Express para criação de rotas e APIs REST
 
 ## Endpoints
 | Método | Endpoint | Responsabilidade |
