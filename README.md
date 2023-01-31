@@ -1,5 +1,22 @@
 # Welcome Home
 
+
+#Endpoints
+| Método | Endpoint | Responsabilidade |
+| --- | --- | --- |
+| POST | /users | Criação de usuário |
+| GET | /users | Lista todos os usuários |
+| PATCH | /users | Atualiza um usuário |
+| DELETE | /users/<id> | Realiza um soft delete no usuário |
+| POST | /login | Gera o token de autenticação |
+| POST | /categories | Criação de categoria |
+| GET | /categories/<id>/properties | Lista todos imóveis que pertencem a uma categoria |
+| POST | /properties | Criação de um imóvel |
+| GET | /properties | Lista todos os imóveis |
+| POST | /schedules | Agenda uma visita a um imóvel |
+| GET | /schedules/properties/<id> | lista todos os agendamentos de um imóvel |
+
+
 Para inciar este projeto, é necessário instalar as dependências, que serão utilizadas nos testes. Portanto utilize o comando abaixo para instalar tais dependências:
 
 ````
