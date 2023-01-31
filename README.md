@@ -16,7 +16,7 @@
 | POST | /schedules | Agenda uma visita a um imóvel |
 | GET | /schedules/properties/<id> | lista todos os agendamentos de um imóvel |
 
-
+# Instalação
 Para inciar este projeto, é necessário instalar as dependências, que serão utilizadas nos testes. Portanto utilize o comando abaixo para instalar tais dependências:
 
 ````
