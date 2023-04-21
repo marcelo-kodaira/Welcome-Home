@@ -2,7 +2,7 @@
   "name": "sprint5",
   "version": "1.0.0",
   "main": "index.ts",
-  "author": "Felipe <felipe.silva@kenzie.com.br>",
+  "author": "Marcelo Almeida",
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
