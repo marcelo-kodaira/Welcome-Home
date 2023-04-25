@@ -99,7 +99,7 @@ npm install --global yarn
 <br>
 
 
-Essa entrega já está com o Docker configurado, basta preencher as variáveis de ambiente no .env
+O Docker já esta configurado, basta preencher as variáveis de ambiente no .env
 
 Basta buildar e subir nossos containers usando o comando padrão:
 ````
